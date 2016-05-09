@@ -8,7 +8,8 @@ using namespace std;
 //FUNCIONES
 #include "inc/func/vec.h"
 
-/** TODO (angel#1#): Repensar SDL */
+/** TODO (angel#1#): Repensar SDL */ :)
+
 void mostrarResultados(int r1, int r2){
    short i;
    cout << "\t";
