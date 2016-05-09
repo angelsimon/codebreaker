@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1381615055 source:/home/angel/Documentos/Proyectos/codebreaker_proto/main.cpp
+	<iostream>
+	"inc/cls/Random.h"
+	"inc/cls/Vector.h"
+	"inc/func/vec.h"
+
+1381551734 /home/angel/Documentos/Proyectos/codebreaker_proto/inc/cls/Random.h
+	<cstdlib>
+	<ctime>
+
+1381554052 /home/angel/Documentos/Proyectos/codebreaker_proto/inc/cls/Vector.h
+
+1381554876 /home/angel/Documentos/Proyectos/codebreaker_proto/inc/func/vec.h
+
+1462828896 source:/home/angel/Proyectos/codebreaker_proto/main.cpp
+	<iostream>
+	"inc/cls/Random.h"
+	"inc/cls/Vector.h"
+	"inc/func/vec.h"
+
+1462828896 /home/angel/Proyectos/codebreaker_proto/inc/cls/Random.h
+	<cstdlib>
+	<ctime>
+
+1462828896 /home/angel/Proyectos/codebreaker_proto/inc/cls/Vector.h
+
+1462828896 /home/angel/Proyectos/codebreaker_proto/inc/func/vec.h
+
