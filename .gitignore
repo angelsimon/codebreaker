@@ -1,0 +1,7 @@
+#WE IGNORE YOU
+bin/
+obj/
+*.depend
+*.layout
+*.~
+
