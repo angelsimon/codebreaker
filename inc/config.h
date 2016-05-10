@@ -1,9 +1,10 @@
-#ifndef _CONFIG_H_
-#define _CONFIG_H_
+#ifndef CONFIG_H_INCLUDED
+#define CONFIG_H_INCLUDED
 
-const bool DEBUG = true;
-const char *PATH_IMAGES = "assets/images/";
-const char *PATH_AUDIOS = "assets/audios/";
-const char *PATH_FONTS = "assets/fonts/";
+extern const bool DEBUG;
+extern const char *LOG_FILE;
+extern const char *PATH_IMAGES;
+extern const char *PATH_AUDIOS;
+extern const char *PATH_FONTS;
 
-#endif // _CONFIG_H_
+#endif // CONFIG_H_INCLUDED
