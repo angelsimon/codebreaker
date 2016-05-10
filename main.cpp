@@ -21,6 +21,7 @@ int main()
       cVector vGuess(4);
       short guess, i, res1=0, res2=0;
       for(i=0; i<4; i++){
+        cout << "Ingrese el " << i+1 << " º digito: ";
          cin >> guess;
          vGuess.set(i, guess);
       }
@@ -32,6 +33,7 @@ int main()
 }
 
 void mostrarResultados(int r1, int r2){
+    cout << endl << "Los # son aciertos a cambiar de lugar" << endl << "Los O son aciertos en el lugar correcto: " << endl << endl;
    short i;
    cout << "\t";
    for (i=0; i<r1; i++){
@@ -40,4 +42,5 @@ void mostrarResultados(int r1, int r2){
    for (i=0; i<r2; i++){
       cout << "# ";
    }
+   cout << endl;
 }
