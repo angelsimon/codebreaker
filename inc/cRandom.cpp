@@ -1,10 +1,10 @@
-#ifndef RANDOM_H_INCLUDED
-#define RANDOM_H_INCLUDED
+#ifndef _CRANDOM_CPP_
+#define _CRANDOM_CPP_
 
 #include <cstdlib>
 #include <ctime>
 
-class Random{
+class cRandom{
 
   public:
   static void inicializar(){
@@ -25,4 +25,4 @@ class Random{
 
 };
 
-#endif // RANDOM_H_INCLUDED
+#endif // _CRANDOM_CPP_

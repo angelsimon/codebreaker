@@ -1,8 +1,10 @@
-#ifndef FVEC_H_INCLUDED
-#define FVEC_H_INCLUDED
+#ifndef _FUNCS_CPP_
+#define _FUNCS_CPP_
+
+#include "cFuncs.h"
 
 /* FUNCIONES QUE TRABAJAN CON EL OBJETO VECTOR */
-bool poblarVector(Vector *vec, unsigned int tope, bool estricto = true){
+bool poblarVector(cVector *vec, unsigned int tope, bool estricto = true){
   unsigned int i;
   if (estricto && tope < vec->getTamanio()){
     return false;
@@ -11,7 +13,7 @@ bool poblarVector(Vector *vec, unsigned int tope, bool estricto = true){
     int nro;
     if(estricto){
       do{
-        nro = Random::getRandom(tope);
+        nro = cRandom::getRandom(tope);
       }while(vec->buscar(nro, i) != -1);
     }
     vec->set(i, nro);
@@ -19,7 +21,7 @@ bool poblarVector(Vector *vec, unsigned int tope, bool estricto = true){
   return true;
 }
 
-void mostrarVector(Vector vec){
+void mostrarVector(cVector vec){
   unsigned int i;
   for(i = 0; i < vec.getTamanio(); i++){
     cout << vec.get(i) << " ";
@@ -32,7 +34,7 @@ void mostrarVector(Vector vec){
 * 2 - Si el digito se encuentra en otra posición
 * 0 - Si el digito no se encuentra
 */
-unsigned int buscarDigito(Vector pajar, int aguja, unsigned int pos){
+unsigned int buscarDigito(cVector pajar, int aguja, unsigned int pos){
   if(pajar.get(pos) == aguja){
     return 1;
   }
@@ -46,7 +48,7 @@ unsigned int buscarDigito(Vector pajar, int aguja, unsigned int pos){
   }
 }
 
-void chequearGuess(Vector code, Vector guess, short *r1, short *r2){
+void chequearGuess(cVector code, cVector guess, short *r1, short *r2){
   unsigned short i;
   for(i = 0; i < code.getTamanio(); i++){
     short r;
@@ -60,4 +62,4 @@ void chequearGuess(Vector code, Vector guess, short *r1, short *r2){
   }
 }
 
-#endif // FVEC_H_INCLUDED
+#endif // _FUNCS_CPP_
