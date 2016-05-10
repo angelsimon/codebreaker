@@ -1,6 +1,3 @@
-#ifndef _MAIN_CPP_
-#define _MAIN_CPP_
-
 #include <iostream>
 using namespace std;
 
@@ -44,5 +41,3 @@ void mostrarResultados(int r1, int r2){
       cout << "# ";
    }
 }
-
-#endif
