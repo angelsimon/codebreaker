@@ -3,9 +3,87 @@
 
 #include "config.cpp"
 #include "cFuncs.h"
+#include <vector>
+#include <algorithm>
+
+void poblarVector(vector <int> &vec, unsigned short tam)
+{
+   std::vector<int>::iterator it;
+   int nro;
+   for(int i=0; i<tam; i++)
+   {
+      do
+      {
+         nro = cRandom::getRandom(0, 9);
+         it = std::find(vec.begin(), vec.end(), nro);
+      }
+      while(it != vec.end());
+      vec.push_back(nro);
+   }
+}
+void mostrarVector(vector <int> vec)
+{
+   for(std::vector<int>::iterator it = vec.begin(); it != vec.end(); ++it)
+   {
+      cout << *it << " ";
+   }
+}
+void mostrarVector(vector <char> vec)
+{
+   for(std::vector<char>::iterator it = vec.begin(); it != vec.end(); ++it)
+   {
+      cout << *it << " ";
+   }
+}
+vector <char> checkGuess(vector <int> code, vector <int> guess)
+{
+   vector <char> result;
+   unsigned short tam = code.size();
+   for(int i=0; i<tam; i++)
+   {
+      int value = searchDigit(code, guess.at(i), i);
+      if (value == 1)
+      {
+         result.push_back('O');
+      }
+      else if (value == 2)
+      {
+         result.push_back('#');
+      }
+   }
+   return result;
+}
+
+unsigned short searchDigit(vector <int> v, int value, unsigned short pos)
+{
+   if (v.at(pos) == value)
+   {
+      return 1;
+   }
+   else
+   {
+      std::vector<int>::iterator it;
+      it = std::find(v.begin(), v.end(), value);
+      if (it != v.end())
+      {
+         return 2;
+      }
+   }
+   return 0;
+}
+
+vector <int> inputGuess(unsigned short tam){
+   vector <int> guess;
+   int nro;
+   for(int i=0; i<tam; i++){
+      cin >> nro;
+      guess.push_back(nro);
+   }
+   return guess;
+}
 
 /* FUNCIONES QUE TRABAJAN CON EL OBJETO VECTOR */
-bool poblarVector(cVector *vec, unsigned int tope, bool estricto = true){
+/*bool poblarVector(cVector *vec, unsigned int tope, bool estricto = true){
   unsigned int i;
   if (estricto && tope < vec->getTamanio()){
     return false;
@@ -21,7 +99,7 @@ bool poblarVector(cVector *vec, unsigned int tope, bool estricto = true){
   }
   return true;
 }
-
+*/
 void mostrarVector(cVector vec){
   unsigned int i;
   for(i = 0; i < vec.getTamanio(); i++){

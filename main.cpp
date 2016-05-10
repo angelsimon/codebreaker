@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-
+#include <array>
+#include <vector>
 #include "inc/cFuncs.h"
 
 /** TODO (angel#1#): Repensar SDL */
@@ -9,7 +10,25 @@ void mostrarResultados(int, int);
 
 int main()
 {
-   path_test();
+   cRandom::inicializar();
+   vector <int> v;
+   poblarVector(v, 4);
+   cout << "+: ";
+   mostrarVector(v);
+   cout << endl << "-------------" << endl;
+   int i=0;
+
+   while(true){
+      cout << "#" << ++i << ": ";
+      vector <int> guess = inputGuess(4);
+      vector <char> result = checkGuess(v, guess);
+      cout << "-" << i << ": ";
+      mostrarVector(result);
+      cout << endl << endl;
+
+   }
+
+   /*path_test();
    cRandom::inicializar();
    cVector v(4);
    cout<<"Poblando vector..."<<endl;
@@ -28,7 +47,7 @@ int main()
       chequearGuess(v, vGuess, &res1, &res2);
       mostrarResultados(res1, res2);
       cout << endl;
-   }
+   }*/
    return 0;
 }
 
