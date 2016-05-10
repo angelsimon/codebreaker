@@ -32,8 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="inc\Funcs.cpp" />
-		<Unit filename="inc\Funcs.h" />
+		<Unit filename="inc\cFuncs.cpp" />
+		<Unit filename="inc\cFuncs.h" />
 		<Unit filename="inc\cRandom.cpp" />
 		<Unit filename="inc\cVector.cpp" />
 		<Unit filename="inc\cVector.h" />

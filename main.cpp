@@ -1,10 +1,7 @@
-#ifndef _MAIN_CPP_
-#define _MAIN_CPP_
-
 #include <iostream>
 using namespace std;
 
-#include "inc/Funcs.h"
+#include "inc/cFuncs.h"
 
 /** TODO (angel#1#): Repensar SDL */
 
@@ -43,5 +40,3 @@ void mostrarResultados(int r1, int r2){
       cout << "# ";
    }
 }
-
-#endif
