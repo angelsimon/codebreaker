@@ -1,7 +1,7 @@
 #ifndef _FUNCS_CPP_
 #define _FUNCS_CPP_
 
-#include "config.h"
+#include "config.cpp"
 #include "cFuncs.h"
 
 /* FUNCIONES QUE TRABAJAN CON EL OBJETO VECTOR */
