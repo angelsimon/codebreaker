@@ -8,5 +8,6 @@ bool poblarVector(cVector*, unsigned int, bool);
 void mostrarVector(cVector);
 unsigned int buscarDigito(cVector, int, unsigned int);
 void chequearGuess(cVector, cVector, short *, short *);
+void path_test();
 
 #endif // _CFUNCS_H_

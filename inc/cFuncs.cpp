@@ -1,6 +1,7 @@
 #ifndef _FUNCS_CPP_
 #define _FUNCS_CPP_
 
+#include "config.h"
 #include "cFuncs.h"
 
 /* FUNCIONES QUE TRABAJAN CON EL OBJETO VECTOR */
@@ -60,6 +61,14 @@ void chequearGuess(cVector code, cVector guess, short *r1, short *r2){
       *r2 = *r2 + 1;
     }
   }
+}
+
+void path_test(){
+   cout << "----------------------------" << endl;
+   cout << "IMAGES: " << PATH_IMAGES << endl;
+   cout << "AUDIOS: " << PATH_AUDIOS << endl;
+   cout << "FONTS: " << PATH_FONTS << endl;
+   cout << "----------------------------" << endl;
 }
 
 #endif // _FUNCS_CPP_

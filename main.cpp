@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-#include "inc/Funcs.h"
+#include "inc/cFuncs.h"
 
 /** TODO (angel#1#): Repensar SDL */
 
@@ -12,6 +12,7 @@ void mostrarResultados(int, int);
 
 int main()
 {
+   path_test();
    cRandom::inicializar();
    cVector v(4);
    cout<<"Poblando vector..."<<endl;
