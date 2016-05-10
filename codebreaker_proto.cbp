@@ -32,19 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-<<<<<<< HEAD
-		<Unit filename="inc/Funcs.cpp" />
-		<Unit filename="inc/Funcs.h" />
+		<Unit filename="inc/cFuncs.cpp" />
+		<Unit filename="inc/cFuncs.h" />
 		<Unit filename="inc/cRandom.cpp" />
 		<Unit filename="inc/cVector.cpp" />
 		<Unit filename="inc/cVector.h" />
-=======
-		<Unit filename="inc\cFuncs.cpp" />
-		<Unit filename="inc\cFuncs.h" />
-		<Unit filename="inc\cRandom.cpp" />
-		<Unit filename="inc\cVector.cpp" />
-		<Unit filename="inc\cVector.h" />
->>>>>>> 668499152c898c56c6888b58cdfb77f376950e97
+		<Unit filename="inc/config.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
