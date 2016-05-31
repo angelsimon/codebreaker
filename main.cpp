@@ -8,8 +8,7 @@ int main(int argc, char* argv[])
    vector <int> v;
    poblarVector(v, 4);
    cout << "+: ";
-   cout << "? ? ? ? ";
-   //mostrarVector(v);
+   mostrarVector(v);
    cout << endl << "-------------" << endl;
    int i=0;
 
