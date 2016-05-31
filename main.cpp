@@ -1,20 +1,15 @@
-#include <iostream>
-using namespace std;
-#include <array>
-#include <vector>
-#include "inc/cFuncs.h"
-
-/** TODO (angel#1#): Repensar SDL */
+#include "inc/Header.h"
 
 void mostrarResultados(int, int);
 
-int main()
+int main(int argc, char* argv[])
 {
    cRandom::inicializar();
    vector <int> v;
    poblarVector(v, 4);
    cout << "+: ";
-   mostrarVector(v);
+   cout << "? ? ? ? ";
+   //mostrarVector(v);
    cout << endl << "-------------" << endl;
    int i=0;
 
@@ -51,15 +46,15 @@ int main()
    return 0;
 }
 
-void mostrarResultados(int r1, int r2){
-    cout << endl << "Los # son aciertos a cambiar de lugar" << endl << "Los O son aciertos en el lugar correcto: " << endl << endl;
-   short i;
-   cout << "\t";
-   for (i=0; i<r1; i++){
-      cout << "O ";
-   }
-   for (i=0; i<r2; i++){
-      cout << "# ";
-   }
-   cout << endl;
-}
+//void mostrarResultados(int r1, int r2){
+//    cout << endl << "Los # son aciertos a cambiar de lugar" << endl << "Los O son aciertos en el lugar correcto: " << endl << endl;
+//   short i;
+//   cout << "\t";
+//   for (i=0; i<r1; i++){
+//      cout << "O ";
+//   }
+//   for (i=0; i<r2; i++){
+//      cout << "# ";
+//   }
+//   cout << endl;
+//}

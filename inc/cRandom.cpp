@@ -25,4 +25,4 @@ class cRandom{
 
 };
 
-#endif // _CRANDOM_CPP_
+#endif

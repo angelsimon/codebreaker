@@ -1,10 +1,13 @@
-#ifndef CONFIG_H_INCLUDED
-#define CONFIG_H_INCLUDED
+#ifndef _CONFIG_H_
+#define _CONFIG_H_
 
-extern const bool DEBUG;
-extern const char *LOG_FILE;
-extern const char *PATH_IMAGES;
-extern const char *PATH_AUDIOS;
-extern const char *PATH_FONTS;
+#include <iostream>
+using namespace std;
 
-#endif // CONFIG_H_INCLUDED
+const bool DEBUG        = true;
+const string LOG_FILE    = "log.txt";
+const string PATH_IMAGES = "assets/images/";
+const string PATH_AUDIOS = "assets/audios/";
+const string PATH_FONTS  = "assets/fonts/";
+
+#endif

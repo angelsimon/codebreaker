@@ -1,5 +1,5 @@
-#ifndef _CFUNCS_H_
-#define _CFUNCS_H_
+#ifndef _FUNCS_H_
+#define _FUNCS_H_
 
 #include "cVector.h"
 #include "cRandom.cpp" // No tiene .h por ser todo estatico.
@@ -17,4 +17,4 @@ unsigned int buscarDigito(cVector, int, unsigned int);
 void chequearGuess(cVector, cVector, short *, short *);
 void path_test();
 
-#endif // _CFUNCS_H_
+#endif
