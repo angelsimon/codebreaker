@@ -2,5 +2,4 @@
 *.layout
 *~
 bin/*
-!bin/assets
 !bin/*.dll

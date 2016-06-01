@@ -4,6 +4,12 @@ void mostrarResultados(int, int);
 
 int main(int argc, char* argv[])
 {
+    SDL_Init(SDL_INIT_VIDEO);
+    SDL_Surface *test;
+    string rutaimg = PATH_IMAGES + "1.bmp";
+    test = SDL_LoadBMP(rutaimg.c_str());
+    SDL_FreeSurface(test);
+    SDL_Quit();
    cRandom::inicializar();
    vector <int> v;
    poblarVector(v, 4);
