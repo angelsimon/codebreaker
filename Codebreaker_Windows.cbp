@@ -7,9 +7,8 @@
 		<Option compiler="gnu_gcc_compiler_configurado_para_usar_sdl_2_-_jonatandb" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/win/Codebreaker" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="bin/win" />
-				<Option object_output="bin/win/obj" />
+				<Option output="bin/Codebreaker" prefix_auto="1" extension_auto="1" />
+				<Option object_output="bin/obj" />
 				<Option type="1" />
 				<Option compiler="gnu_gcc_compiler_configurado_para_usar_sdl_2_-_jonatandb" />
 				<Compiler>
@@ -17,9 +16,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/win/Codebreaker" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="bin/win" />
-				<Option object_output="bin/win/obj" />
+				<Option output="bin/Codebreaker" prefix_auto="1" extension_auto="1" />
+				<Option object_output="bin/obj" />
 				<Option type="1" />
 				<Option compiler="gnu_gcc_compiler_configurado_para_usar_sdl_2_-_jonatandb" />
 				<Compiler>
